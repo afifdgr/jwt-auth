@@ -1,0 +1,28 @@
+GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEsIm5hbWUiOiJhZml2IiwiZW1haWwiOiJlbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2Nzk4ODg4MTUsImV4cCI6MTY3OTg4ODgzNX0.qmC_W79HakdCi1G2HDnEWSekoFIJBBWySoaz95Iy9wE
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "afivve",
+    "email": "email2@gmail.com",
+    "password": "123456",
+    "confPassword": "1234567"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "email@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
+
+###
+DELETE  http://localhost:5000/logout
